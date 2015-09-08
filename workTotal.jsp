@@ -1,3 +1,4 @@
+It is good man 2015.09.08 11:24
 This is kim 2015.09.08 11:20
 
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
