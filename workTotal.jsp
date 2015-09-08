@@ -69,7 +69,23 @@ function fn_prevdate()
   	//	}
   		
 	}
-	    
+function fn_nextdatexxx()
+	{
+		var searchYear = document.getElementById("year").value;
+	    var searchMonth = document.getElementById("month").value;
+	    var searchDay   = document.getElementById("day").value;
+  	
+  		var date1 = searchYear + searchMonth +  searchDay;
+  		var todate = date_minus(date1,4);
+  		var fromdate = date_minus(todate,4);
+  		  		 
+  		searchYear = todate.substr(0,4);
+  		searchMonth = todate.substr(4,2);  
+  		searchDay = todate.substr(6,2);
+  	
+  		fn_search(searchYear,searchMonth,searchDay,todate,fromdate)
+	}
+	
 function fn_nextdate()
 	{
 		var searchYear = document.getElementById("year").value;
