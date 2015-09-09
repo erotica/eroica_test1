@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 add junseok
+=======
+It is good man 2015.09.08 11:24
+This is kim 2015.09.08 11:20
+
+>>>>>>> 66649a283b2df1b23fbf0bda01d73342ecf677ba
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -70,7 +76,23 @@ function fn_prevdate()
   	//	}
   		
 	}
-	    
+function fn_nextdatexxx()
+	{
+		var searchYear = document.getElementById("year").value;
+	    var searchMonth = document.getElementById("month").value;
+	    var searchDay   = document.getElementById("day").value;
+  	
+  		var date1 = searchYear + searchMonth +  searchDay;
+  		var todate = date_minus(date1,4);
+  		var fromdate = date_minus(todate,4);
+  		  		 
+  		searchYear = todate.substr(0,4);
+  		searchMonth = todate.substr(4,2);  
+  		searchDay = todate.substr(6,2);
+  	
+  		fn_search(searchYear,searchMonth,searchDay,todate,fromdate)
+	}
+	
 function fn_nextdate()
 	{
 		var searchYear = document.getElementById("year").value;
